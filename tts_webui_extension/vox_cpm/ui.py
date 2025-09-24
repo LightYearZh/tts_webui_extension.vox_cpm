@@ -145,7 +145,6 @@ def create_demo_interface(demo: VoxCPMDemo):
                 sources=["upload", 'microphone'],
                 type="filepath",
                 label="Prompt Speech (Optional, or let VoxCPM improvise)",
-                value="./examples/example.wav",
             )
             DoDenoisePromptAudio = gr.Checkbox(
                 value=False,
@@ -155,7 +154,6 @@ def create_demo_interface(demo: VoxCPMDemo):
             )
             with gr.Row():
                 prompt_text = gr.Textbox(
-                    value="Just by listening a few minutes a day, you'll be able to eliminate negative thoughts by conditioning your mind to be more positive.",
                     label="Prompt Text",
                     placeholder="Please enter the prompt text. Automatic recognition is supported, and you can correct the results yourself..."
                 )
@@ -180,7 +178,6 @@ def create_demo_interface(demo: VoxCPMDemo):
             )
             with gr.Row():
                 text = gr.Textbox(
-                    value="VoxCPM is an innovative end-to-end TTS model from ModelBest, designed to generate highly realistic speech.",
                     label="Target Text",
                 )
             with gr.Row():
