@@ -16,7 +16,7 @@ class VoxCPMDemo:
         print(f"🚀 Running on device: {self.device}")
 
         self.voxcpm_model: Optional[voxcpm.VoxCPM] = None
-        self.default_local_model_dir = ".data/models/voxcpm/VoxCPM-0.5B"
+        self.default_local_model_dir = "./data/models/voxcpm/VoxCPM-0.5B"
 
     # ---------- Model helpers ----------
     def _resolve_model_dir(self) -> str:
@@ -25,7 +25,7 @@ class VoxCPMDemo:
 
         repo_id = "openbmb/VoxCPM-0.5B"
         if len(repo_id) > 0:
-            target_dir = os.path.join("models", repo_id.replace("/", "__"))
+            target_dir = self.default_local_model_dir
             if not os.path.isdir(target_dir):
                 try:
                     from huggingface_hub import snapshot_download  # type: ignore
