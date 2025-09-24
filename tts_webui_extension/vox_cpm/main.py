@@ -12,12 +12,12 @@ def extension__tts_generation_webui():
     
     return {
         "package_name": "tts_webui_extension.vox_cpm",
-        "name": "Vox cpm",
+        "name": "VoxCPM",
         "requirements": "git+https://github.com/rsxdalv/tts_webui_extension.vox_cpm@main",
         "description": "A template extension for TTS Generation WebUI",
         "extension_type": "interface",
         "extension_class": "text-to-speech",
-        "author": "Your Name",
+        "author": "OpenBMB",
         "extension_author": "rsxdalv",
         "license": "MIT",
         "website": "https://github.com/rsxdalv/tts_webui_extension.vox_cpm",
