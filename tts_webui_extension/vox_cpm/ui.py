@@ -44,7 +44,7 @@ class VoxCPMDemo:
         print("Model not loaded, initializing...")
         model_dir = self._resolve_model_dir()
         print(f"Using model dir: {model_dir}")
-        self.voxcpm_model = voxcpm.VoxCPM(voxcpm_model_path=model_dir)
+        self.voxcpm_model = voxcpm.VoxCPM(voxcpm_model_path=model_dir, zipenhancer_model_path="iic/speech_zipenhancer_ans_multiloss_16k_base", enable_denoiser=True, optimize=False)
         print("Model loaded successfully.")
         return self.voxcpm_model
 
