@@ -8,7 +8,7 @@ setuptools.setup(
     name="tts_webui_extension.vox_cpm",
     packages=setuptools.find_namespace_packages(),
     version="0.0.1",
-    author="Your Name",
+    author="OpenBMB",
     description="A template extension for TTS Generation WebUI",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -16,9 +16,7 @@ setuptools.setup(
     project_urls={},
     scripts=[],
     install_requires=[
-        # Add your dependencies here
-        # "numpy",
-        # "torch",
+        "voxcpm",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
