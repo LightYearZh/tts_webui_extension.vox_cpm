@@ -16,7 +16,7 @@ class VoxCPMDemo:
         print(f"🚀 Running on device: {self.device}")
 
         self.voxcpm_model: Optional[voxcpm.VoxCPM] = None
-        self.default_local_model_dir = "./models/VoxCPM-0.5B"
+        self.default_local_model_dir = ".data/models/voxcpm/VoxCPM-0.5B"
 
     # ---------- Model helpers ----------
     def _resolve_model_dir(self) -> str:
