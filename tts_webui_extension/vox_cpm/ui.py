@@ -155,8 +155,10 @@ def create_demo_interface(demo: VoxCPMDemo):
             with gr.Row():
                 prompt_text = gr.Textbox(
                     label="Prompt Text",
-                    placeholder="Please enter the prompt text. Automatic recognition is supported, and you can correct the results yourself..."
+                    placeholder="Please enter the prompt text. Automatic recognition is supported, and you can correct the results yourself...",
+                    scale=8
                 )
+                prompt_recognition_btn = gr.Button("从音频识别Prompt", scale=2)
             run_btn = gr.Button("Generate Speech", variant="primary")
 
         with gr.Column():
@@ -197,7 +199,7 @@ def create_demo_interface(demo: VoxCPMDemo):
         show_progress=True,
         api_name="generate",
     )
-    prompt_wav.change(fn=demo.prompt_wav_recognition, inputs=[prompt_wav], outputs=[prompt_text])
+    prompt_recognition_btn.click(fn=demo.prompt_wav_recognition, inputs=[prompt_wav], outputs=[prompt_text])
 
 
 
