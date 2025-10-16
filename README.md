@@ -9,7 +9,7 @@ This is a template extension. Replace this content with your extension's descrip
 ## Installation
 
 ```bash
-pip install git+https://github.com/rsxdalv/tts_webui_extension.vox_cpm@main
+pip install git+https://github.com/LightYearZh/tts_webui_extension.vox_cpm.git@main
 ```
 
 ## Usage
