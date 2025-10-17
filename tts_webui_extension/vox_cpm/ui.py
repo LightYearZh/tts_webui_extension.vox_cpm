@@ -89,6 +89,7 @@ class VoxCPMDemo:
             normalize=do_normalize,
             denoise=denoise,
         )
+        torch.cuda.empty_cache()
         return (16000, wav)
 
 
